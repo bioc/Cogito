@@ -18,7 +18,7 @@ test_that("function Cogito::aggregateRanges returns correct value",
                               c(41023544, 41212385, 41528663, 41995357, 
                                 42302290, 43257075, 43619492, 49504033, 
                                 51349425, 52099521)),
-                      seqinfo = GenomeInfoDb::seqinfo(mm9),
+                      seqinfo = Seqinfo::seqinfo(mm9),
                       expr = c(0.79, 0.11, 0.07, 0.34, 0.54))
             ranges.RNA.condition <-
               GRanges(seq = "chr10",
@@ -28,7 +28,7 @@ test_that("function Cogito::aggregateRanges returns correct value",
                               c(41014274, 41209664, 41536039, 42000182, 
                                 42292965, 43256430, 43615866, 49498362, 
                                 51347969, 52092733)),
-                      seqinfo = GenomeInfoDb::seqinfo(mm9),
+                      seqinfo = Seqinfo::seqinfo(mm9),
                       expr = c(0.20, 0.65, 0.22, 0.45, 0.11))
             ranges.ChIP.control <-
               GRanges(seq = "chr10",
@@ -40,7 +40,7 @@ test_that("function Cogito::aggregateRanges returns correct value",
                                 42893974, 43259889, 43620604, 43722051, 
                                 44248920, 45207704, 49508859, 51310187, 
                                 51348921, 52102030, 52265689)),
-                      seqinfo = GenomeInfoDb::seqinfo(mm9),
+                      seqinfo = Seqinfo::seqinfo(mm9),
                       score = c(24, 59, 17, 12, 29, 7, 45, 34, 28, 14, 58,
                                74, 24, 61, 32))
             

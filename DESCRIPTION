@@ -2,8 +2,8 @@ Package: Cogito
 Type: Package
 Title: Compare genomic intervals tool - Automated, complete, reproducible and 
     clear report about genomic and epigenomic data sets
-Version: 1.15.0
-Date: 2022-06-20
+Version: 1.15.1
+Date: 2025-07-22
 Authors@R: person("Annika", "Bürger", email="a.buerger@uni-muenster.de",
     role=c("cre", "aut"))
 Description: Biological studies often consist of multiple conditions 
@@ -17,7 +17,7 @@ License: LGPL-3
 Encoding: UTF-8
 LazyData: TRUE
 Depends: R (>= 4.1), GenomicRanges, jsonlite, GenomicFeatures, entropy
-Imports: BiocManager, rmarkdown, GenomeInfoDb, S4Vectors, AnnotationDbi, 
+Imports: BiocManager, rmarkdown, Seqinfo, S4Vectors, AnnotationDbi, 
     graphics, stats, utils, methods, magrittr, ggplot2, 
     TxDb.Mmusculus.UCSC.mm9.knownGene
 biocViews: FunctionalGenomics, GeneRegulation, Software, Sequencing

@@ -9,7 +9,7 @@ importFrom('ggplot2', 'ggplot', 'geom_bar', 'geom_boxplot', 'geom_point',
 importFrom('BiocManager', 'install')
 importFrom('rmarkdown', 'render')
 importFrom('AnnotationDbi', 'columns')
-importFrom('GenomeInfoDb', 'Seqinfo', 'genome')
+importFrom('Seqinfo', 'Seqinfo', 'genome')
 importFrom('entropy', 'mi.plugin', 'entropy.plugin')
 importFrom('jsonlite', 'fromJSON', 'toJSON')
 importFrom('S4Vectors', 'Rle', 'runValue', 'DataFrame',

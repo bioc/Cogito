@@ -32,7 +32,7 @@ ranges.RNA.control <-
                         43256520, 43618919, 49503584, 51349066, 52099001),
                     c(41023544, 41212385, 41528663, 41995357, 42302290,
                         43257075, 43619492, 49504033, 51349425, 52099521)),
-            seqinfo = GenomeInfoDb::seqinfo(mm9),
+            seqinfo = Seqinfo::seqinfo(mm9),
             expr = runif(5, 0, 1))
 ranges.RNA.condition <-
     GRanges(seq = "chr10",
@@ -40,7 +40,7 @@ ranges.RNA.condition <-
                         43256194, 43615562, 49497888, 51347046, 52092180),
                     c(41014274, 41209664, 41536039, 42000182, 42292965, 
                         43256430, 43615866, 49498362, 51347969, 52092733)),
-            seqinfo = GenomeInfoDb::seqinfo(mm9),
+            seqinfo = Seqinfo::seqinfo(mm9),
             expr = runif(5, 0, 1))
 ranges.ChIP.control <-
     GRanges(seq = "chr10",
@@ -50,7 +50,7 @@ ranges.ChIP.control <-
                     c(41022954, 41307745, 42198201, 42302555, 42893974,
                         43259889, 43620604, 43722051, 44248920, 45207704,
                         49508859, 51310187, 51348921, 52102030, 52265689)),
-            seqinfo = GenomeInfoDb::seqinfo(mm9),
+            seqinfo = Seqinfo::seqinfo(mm9),
             score = round(runif(15, 5, 90)))
 
 example.dataset <- list(RNA = GRangesList(control = ranges.RNA.control,

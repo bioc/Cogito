@@ -333,7 +333,7 @@ summarizeRanges <- function(aggregated.ranges, outputFormat = "pdf",
 
     write(paste0(
         "The given ", 
-        paste(unique(GenomeInfoDb::genome(aggregated.ranges$genes)),
+        paste(unique(Seqinfo::genome(aggregated.ranges$genes)),
                 collapse = ", "
         ), 
         " dataset *", name ,"* consists of ", 
